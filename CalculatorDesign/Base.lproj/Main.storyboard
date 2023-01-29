@@ -239,11 +239,22 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NZ4-Cs-laF" userLabel="rowOneBottom">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NZ4-Cs-laF" userLabel="rowOneBottom">
                                                 <rect key="frame" x="0.0" y="308" width="363" height="62"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glM-nh-e6Z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="105.66666666666667" height="62"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="62"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="&lt;">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qw-hA-Tfe">
+                                                        <rect key="frame" x="94.666666666666686" y="0.0" width="79.333333333333314" height="62"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="0">
                                                             <backgroundConfiguration key="background">
@@ -254,7 +265,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J46-1v-8c0">
-                                                        <rect key="frame" x="120.66666666666666" y="0.0" width="91" height="62"/>
+                                                        <rect key="frame" x="189" y="0.0" width="79.666666666666686" height="62"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="1">
                                                             <backgroundConfiguration key="background">
@@ -265,7 +276,7 @@
                                                         </buttonConfiguration>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kv-av-Hxw">
-                                                        <rect key="frame" x="226.66666666666663" y="0.0" width="136.33333333333337" height="62"/>
+                                                        <rect key="frame" x="283.66666666666669" y="0.0" width="79.333333333333314" height="62"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="=">
                                                             <backgroundConfiguration key="background">

@@ -16,297 +16,305 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1n7-zE-qud" userLabel="Background">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1n7-zE-qud" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="bottomRight" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G5f-eX-RBD">
-                                <rect key="frame" x="25" y="154" width="343" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="DXN-eX-cQT">
+                                <rect key="frame" x="25" y="84" width="343" height="743"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="260" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIv-si-RW9">
-                                        <rect key="frame" x="20" y="70" width="109" height="72"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13 x 20 =" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHv-c6-bCE">
-                                        <rect key="frame" x="23" y="20" width="109" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="bottomRight" translatesAutoresizingMaskIntoConstraints="NO" id="G5f-eX-RBD" userLabel="resultsPane">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="233"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="260" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIv-si-RW9">
+                                                <rect key="frame" x="20" y="70" width="109" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13 x 20 =" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHv-c6-bCE">
+                                                <rect key="frame" x="23" y="20" width="109" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95377498364789759" green="0.95661787417671063" blue="1" alpha="0.31292517006802723" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eTH-dY-Y1I" userLabel="buttonPanel">
+                                        <rect key="frame" x="0.0" y="240" width="343" height="503"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4k-pJ-lga" userLabel="rowFiveTop">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="100.66666666666667"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lND-sS-eCB">
+                                                        <rect key="frame" x="99" y="20" width="83" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="+/-">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcR-7v-Kct">
+                                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="%">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyB-WK-QfV">
+                                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="/">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-2m-oVt">
+                                                        <rect key="frame" x="16" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="C">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-Qh-7T9" userLabel="rowFour">
+                                                <rect key="frame" x="0.0" y="100.66666666666669" width="343" height="100.33333333333331"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0J-3c-Is4">
+                                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="7">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnE-dh-Qqo">
+                                                        <rect key="frame" x="103" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="8">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J97-ua-bQt">
+                                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="9">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaI-tq-rRe">
+                                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="x">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shx-eo-264" userLabel="rowThree">
+                                                <rect key="frame" x="0.0" y="201" width="343" height="100.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k21-ql-x0O">
+                                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="4">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywV-Yh-T87">
+                                                        <rect key="frame" x="103" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="5">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4Y-Ua-01s">
+                                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="6">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAw-YY-bGd">
+                                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="-">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pp3-tu-3nB" userLabel="rowTwo">
+                                                <rect key="frame" x="0.0" y="301.66666666666663" width="343" height="100.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1R-Ip-bv9">
+                                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="1">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vug-Fq-grH">
+                                                        <rect key="frame" x="103" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="2">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-Gm-M2q">
+                                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="3">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-ps-gry">
+                                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="+">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICJ-dd-KHT" userLabel="rowOneBottom">
+                                                <rect key="frame" x="0.0" y="402.33333333333337" width="343" height="100.66666666666669"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glM-nh-e6Z">
+                                                        <rect key="frame" x="20" y="20" width="155" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="0">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J46-1v-8c0">
+                                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="1">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kv-av-Hxw">
+                                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="=">
+                                                            <backgroundConfiguration key="background">
+                                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </backgroundConfiguration>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95377498364789759" green="0.95661787417671063" blue="1" alpha="0.31292517006802723" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-Qh-7T9">
-                                <rect key="frame" x="10" y="418" width="372" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0J-3c-Is4">
-                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="7">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnE-dh-Qqo">
-                                        <rect key="frame" x="103" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="8">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J97-ua-bQt">
-                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="9">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaI-tq-rRe">
-                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="x">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shx-eo-264">
-                                <rect key="frame" x="13" y="511" width="372" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k21-ql-x0O">
-                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="4">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywV-Yh-T87">
-                                        <rect key="frame" x="103" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="5">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4Y-Ua-01s">
-                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="6">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAw-YY-bGd">
-                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="-">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pp3-tu-3nB">
-                                <rect key="frame" x="10" y="594" width="372" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1R-Ip-bv9">
-                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="1">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vug-Fq-grH">
-                                        <rect key="frame" x="103" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="2">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIF-Gm-M2q">
-                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="3">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-ps-gry">
-                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICJ-dd-KHT">
-                                <rect key="frame" x="10" y="692" width="372" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glM-nh-e6Z">
-                                        <rect key="frame" x="20" y="20" width="155" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="0">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J46-1v-8c0">
-                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="1">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.33005761820000001" green="0.34879169049999997" blue="0.35314331910000002" alpha="0.82312925169999995" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kv-av-Hxw">
-                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="=">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l4k-pJ-lga">
-                                <rect key="frame" x="13" y="323" width="372" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dW-2m-oVt">
-                                        <rect key="frame" x="20" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="C">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lND-sS-eCB">
-                                        <rect key="frame" x="99" y="20" width="83" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+/-">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcR-7v-Kct">
-                                        <rect key="frame" x="194" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="%">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyB-WK-QfV">
-                                        <rect key="frame" x="277" y="20" width="75" height="75"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="/">
-                                            <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" red="0.10338906278081161" green="0.55961921536925485" blue="0.75773195876288657" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="40"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1n7-zE-qud" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6CK-7J-3jU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DXN-eX-cQT" secondAttribute="trailing" constant="25" id="BxN-nK-60C"/>
+                            <constraint firstItem="DXN-eX-cQT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Csc-Cd-99s"/>
+                            <constraint firstAttribute="bottom" secondItem="1n7-zE-qud" secondAttribute="bottom" id="Fo9-9L-Y2L"/>
+                            <constraint firstAttribute="bottom" secondItem="DXN-eX-cQT" secondAttribute="bottom" constant="25" id="Gyp-2v-D1k"/>
+                            <constraint firstItem="1n7-zE-qud" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="J21-rR-plr"/>
+                            <constraint firstItem="DXN-eX-cQT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="PlT-eO-CPi"/>
+                            <constraint firstItem="1n7-zE-qud" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="eYW-HM-XID"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
